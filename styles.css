@@ -1,0 +1,31 @@
+/* Estilos de las pestañas */
+.tab-container {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tablinks {
+  background-color: #ddd;
+  float: left;
+  border: 1px solid #ccc;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  transition: background-color 0.3s;
+}
+
+.tablinks:hover {
+  background-color: #bbb;
+}
+
+.tabcontent {
+  display: none;
+  padding: 20px;
+  border-top: none;
+}
+
+/* Estilo para la pestaña activa */
+.tablinks.active {
+  background-color: #ccc;
+}
