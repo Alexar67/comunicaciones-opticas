@@ -224,39 +224,3 @@ h2 {
 hr {
   margin: 0 40px 0 40px;
 }
-
-.subindice hr {
-  margin: 0 20px 0 20px;
-}
-
-.subindice p {
-  margin: 20px 20px 0 20px;
-}
-
-.indice {
-  margin: 0px;
-  padding: 0px;
-  color: black;
-} 
-
-.indice h1{
-  margin-top: 50px;
-  margin-bottom: 0;
-  padding: 0px;
-  font-size: 35px;
-  text-align: center;
-} 
-
-.subindice h2{
-  margin: 10px 0 0 10px;
-  padding: 10px 0 0 10px;
-  font-size: 28px;
-  text-align: left;
-} 
-
-.indice ul li a{
-  padding: 0px; 
-  margin: 0;
-  color: black;
-  font-size: 18px;
-}
