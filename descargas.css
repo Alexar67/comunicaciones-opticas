@@ -1,0 +1,136 @@
+body {
+  background-color: #C4C3C3; /* Color gris */
+  margin: 0; /* Eliminar márgenes */
+  padding: 0; /* Eliminar relleno */
+  font-family: 'Oswald', sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+.content-container {
+  background-color: #fff; /* Área blanca */
+  padding-top: 100px;
+  padding-bottom: 100px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); /* Sombra suave */
+  width: 100%; /* Ancho del contenido */
+  max-width: 1200px; /* Ancho máximo del contenido */
+  margin-top: 20px; /* Agregar un margen superior */
+}
+
+.content-container h2{
+  padding: 30px 0 0 0;
+  padding-bottom: 0px;
+  margin: 0;
+  width: 100%;
+}
+
+/* Navegación */
+.nav-main {
+  font-weight: bolder;
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #0E8AB5;
+  align-items: center;
+  height: 51px; /* ancho de el color celeste */
+  padding: 0px;
+} 
+
+/*ul*/
+.nav-main ul {
+  display: flex;
+}
+
+.nav-main ul li {
+  padding: 13px; /*Ajustar el color morado*/
+}
+
+.nav-main ul li a{
+  padding: 5px; /*Ajustar el color morado*/
+  margin: 15px 10px 25px 10px;
+}
+
+.nav-main ul li:hover {
+  background-color: #830DB0; /* Cambia el color cuando pasas el ratón sobre los elementos */
+}
+
+.nav-menu li:hover a {
+  color: white;
+}
+
+/*DESCARGAS*/
+.descripcion h3 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+  
+.descripcion p {
+    padding: 0 10px 0 20px;
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+    font-size: 20px;
+}
+  
+.descargas {
+    padding: 0 50px 0 30px;
+    margin: 0 0 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.descargas img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%; 
+    height: auto; 
+    max-height: 180px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 2); /* Sombra suave */
+}
+  
+.video {
+    margin: 60px 30px 0 10px;
+    padding: 0 0 0 0;
+    justify-content: center; 
+    display: flex;
+    width: 100%; /* Ancho del contenedor del video */
+}
+
+.enlace {
+  display: block; /* Para asegurar que el elemento llene el ancho disponible */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: #F3F3F3;
+  color: black; /* Cambiado de white a black para mejorar la legibilidad */
+  text-decoration: none;
+  border: 2px solid #C8C8C8;
+  font-weight: bold;
+  padding: 5px 15px;
+  margin: 5px auto 10px; /* Margen superior e inferior 5px, margen izquierdo y derecho automáticos */
+  width: fit-content; /* Ajusta el ancho al contenido */
+}
