@@ -51,7 +51,8 @@
           <li><a href="#tema12">2.12 Empalmes y conectores</a></li>
           <li><a href="#tema13">2.13 Cables de fibra óptica/a></li>
           <li><a href="#tema14">2.14 Selección de cable óptico</a></li>
-          <li><a href="#tema15">2.15 Archivos de descargas</a></li>
+          <li><a href="#tema15">> Archivos de descargas</a></li>
+          <li><a href="#tema16">> Lección del Capítulo </a></li>
         </ul>
       </div>
 
@@ -115,7 +116,64 @@
 
         <h2 id="tema15">Descargas</h2>
         <hr>
-        <p>Contenido de la sección 3...</p>
+        <div class="botones-container">
+          <button id="descargarpdf">Descargar Capitulo II PDF</button>
+          <button id="descargarword">Descargar Capitulo II WORD</button>
+        </div>
+
+        <h2 id="tema16">Lección del Capítulo</h2>
+        <hr>
+
+        <button id="iniciarLeccion">Iniciar Lección</button>
+        <!-- Ventana emergente oculta inicialmente -->
+        <div id="ventanaEmergente" class="ventana-emergente">
+          <div class="contenido">
+            <span class="cerrar" id="cerrarVentana">&times;</span>
+            <h2>Lección del Capítulo II</h2>
+            <div id="preguntas">
+              <!-- Aquí van las preguntas y opciones -->
+              <div class="pregunta">
+                <p>Pregunta 1: ¿En qué año comenzó la Segunda Guerra Mundial?</p>
+                <input type="radio" name="pregunta1" value="1939"> 1939<br>
+                <input type="radio" name="pregunta1" value="1941"> 1941<br>
+                <input type="radio" name="pregunta1" value="1945"> 1945<br>
+              </div>
+              <div class="pregunta">
+                <p>Pregunta 1: ¿En qué año comenzó la Segunda Guerra Mundial?</p>
+                <input type="radio" name="pregunta2" value="1939"> 1939<br>
+                <input type="radio" name="pregunta2" value="1941"> 1941<br>
+                <input type="radio" name="pregunta2" value="1945"> 1945<br>
+              </div>
+              <div class="pregunta">
+                <p>Pregunta 1: ¿En qué año comenzó la Segunda Guerra Mundial?</p>
+                <input type="radio" name="pregunta3" value="1939"> 1939<br>
+                <input type="radio" name="pregunta3" value="1941"> 1941<br>
+                <input type="radio" name="pregunta3" value="1945"> 1945<br>
+              </div>
+              <div class="pregunta">
+                <p>Pregunta 1: ¿En qué año comenzó la Segunda Guerra Mundial?</p>
+                <input type="radio" name="pregunta4" value="1939"> 1939<br>
+                <input type="radio" name="pregunta4" value="1941"> 1941<br>
+                <input type="radio" name="pregunta4" value="1945"> 1945<br>
+              </div>
+              <div class="pregunta">
+                <p>Pregunta 1: ¿En qué año comenzó la Segunda Guerra Mundial?</p>
+                <input type="radio" name="pregunta5" value="1939"> 1939<br>
+                <input type="radio" name="pregunta5" value="1941"> 1941<br>
+                <input type="radio" name="pregunta5" value="1945"> 1945<br>
+              </div>
+            </div>
+            <button id="calcularResultado">Calcular Resultado</button>
+            <div id="resultado" style="display:none;">
+              <h3>Resultado:</h3>
+              <p id="puntuacion"></p>
+              <p id="respuestasCorrectas"></p>
+              <p id="respuestasIncorrectas"></p>
+            </div>
+          </div>
+        </div>
+
+        <script src="cap2.js"></script>
 
       </div>
     </div>
