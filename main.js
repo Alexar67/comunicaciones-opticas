@@ -1,9 +1,13 @@
-// JavaScript para manejar el despliegue de los submenús al hacer clic
-document.addEventListener('DOMContentLoaded', function() {
-  const toggles = document.querySelectorAll('.toggle');
-  toggles.forEach(toggle => {
-    toggle.addEventListener('click', function() {
-      this.nextElementSibling.classList.toggle('show');
-    });
-  });
+document.getElementById('descargarpdf').addEventListener('click', function() {
+  var url = 'docs/cap1.pdf'; // Reemplaza con la URL de tu archivo PDF o Word
+  
+  // Abrir el enlace en una nueva pestaña
+  window.open(url, '_blank');
+});
+
+document.getElementById('descargarword').addEventListener('click', function() {
+  var url = 'docs/cap1.docx'; // Reemplaza con la URL de tu archivo PDF o Word
+  
+  // Abrir el enlace en una nueva pestaña
+  window.open(url, '_blank');
 });

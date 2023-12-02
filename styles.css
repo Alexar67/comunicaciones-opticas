@@ -60,25 +60,57 @@ h2 {
 /*ul*/
 .nav-main ul {
   display: flex;
+
 }
 
 .nav-main ul li {
   padding: 13px; /*Ajustar el color morado*/
+  display: inline-block;
+  position: relative;
 }
 
 .nav-main ul li a{
   padding: 5px; /*Ajustar el color morado*/
-  margin: 15px 10px 25px 10px;
+  margin: 15px 10px 25px 15px;
 }
 
 .nav-main ul li:hover {
-  background-color: #830DB0; /* Cambia el color cuando pasas el ratón sobre los elementos */
+  background-color: #830DB0; /* Cambia el color cuando pasas el ratón sobre los elementos del menú principal */
 }
 
-.nav-menu li:hover a {
-  color: white;
+.nav-main ul li:hover > ul {
+  display: block; /* Mostrar el menú desplegable al pasar el ratón */
 }
 
+/* Estilos para los elementos del menú desplegable */
+.nav-main ul ul {
+  display: none;
+  position: absolute;
+  background-color: #830DB0; /* Color de fondo del submenu */
+  min-width: 360px; /* Ancho mínimo del submenu */
+  left: 0;
+  top: 100%;
+  padding-left: 0;
+}
+
+.nav-main ul ul li {
+  display: block; /* Mostrar los elementos del menú desplegable uno debajo del otro */
+}
+
+.nav-main ul ul li a{
+  margin: 0 0 0 30px; /* Mostrar los elementos del menú desplegable uno debajo del otro */
+}
+
+.nav-main ul ul li:hover {
+  background-color: #0E8AB5; /* Cambia el color cuando pasas el ratón sobre los elementos del submenu */
+}
+
+.nav-main ul ul li a:hover {
+  color: #050505; /* Cambia el color cuando pasas el ratón sobre los elementos del submenu */
+
+}
+
+/* CUADRO DE TEXTO CON VIDEO EN EL INTRO*/
 .intro h1 {
   padding: 0 0 0 50px;
   margin: 80px 20px 0 10px;
@@ -103,10 +135,11 @@ h2 {
 
 .video {
   margin: 80px 80px 0 10px;
-  padding: 10px 0 0 0;
+  padding: 0 0 0 0;
   justify-content: center; 
   display: flex;
   width: 100%; /* Ancho del contenedor del video */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 1); /* Sombra suave */
 }
 
 .contenedor1 {
