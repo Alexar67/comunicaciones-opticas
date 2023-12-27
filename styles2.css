@@ -302,6 +302,24 @@ button {
   margin: 0 auto; 
 }
 
+/*Imagenes mas pequñas*/
+
+.imagenmaspequeña {
+  text-align: center; 
+  font-style: italic;
+  line-height: 0.4;
+}
+
+.imagenmaspequeña p {
+  text-align: center;
+}
+
+.imagenmaspequeña img {
+  width: 95%; 
+  display: block; 
+  margin: 0 auto; 
+}
+
 /*Formulas*/
 
 .formula {
@@ -337,5 +355,6 @@ button {
   background-color: #555;
 }
 
-
-
+.lista {
+  padding-right: 50px;
+}

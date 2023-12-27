@@ -90,7 +90,7 @@ document.getElementById('calcularResultado').addEventListener('click', function(
   document.getElementById('resultado').style.display = 'block';
 });
 
-
+/*REGRESAR ARRIBA*/
 window.addEventListener('scroll', function() {
   var backToTopButton = document.getElementById('back-to-top');
 
