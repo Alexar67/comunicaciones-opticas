@@ -16,7 +16,7 @@
       <nav class="nav-main">
         <ul class="nav-menu">
           <li><a href="index.html">Home</a></li>
-          <li><a href="#tema1">Capítulos</a>
+          <li><a href="#">Capítulos</a>
             <ul>
               <li><a href="cap1.html">Capítulo I: Fundamentos de los sistemas ópticos</a></li>
               <li><a href="cap2.html">Capítulo II: Fibra Óptica</a></li>
@@ -57,47 +57,234 @@
 
         <h2 id="tema1">Conceptos fundamentales de comunicaciones ópticas</h2>
         <hr>
-        <p>Contenido de la sección 1...</p>
+        <p>Aunque los intentos de transmitir información por medio de la luz se remontan a la antigüedad, tan sólo recientemente se ha conseguido realizar tal transmisión de modo eficiente y útil. Para ello ha sido necesaria la aparición de dos hitos tecnológicos independientes: el láser y la fibra óptica. El primero ha evolucionado hasta llegar a ser un dispositivo fiable y de precio competitivo que alcanza holgadamente velocidades de transmisión de varios Gbps. La segunda ha conseguido transformarse en el medio de transmisión idóneo para la región del espectro en torno a 1 μm, con atenuaciones próximas al límite teórico, y control a través de parámetros de fabricación de la dispersión temporal producida por el medio que, en último término, es el factor que limita el ancho de banda tolerado por el mismo.
+        Estas notas no pretenden ser un curso introductorio de Comunicaciones Ópticas, sino un apoyo al alumno para mejorar su comprensión sobre el fundamento teórico de las Prácticas que realiza, y sobre los resultados que cabe esperar en un determinado montaje experimental.</p>
+        <div class="imagen">
+          <img src="cap1/imagen3.png" alt="Sistema Optico">
+          <p>Sistema óptico</p>
+          <p>[1] Punto de interconexión eléctrico de acuerdo a Rec. G.703 del CC1TT. </p>
+          <p>[2] Regenerador </p>
+          <p>[3] Conversor E/O y O/E </p>  
+          <p>[4] Conductor de fibra óptica</p>   
+          
+        </div>
 
         <h2 id="tema2">Conversores opto-eléctricos</h2>
         <hr>
-        <p>Contenido de la sección 2...</p>
+        <h3>Transmisores ópticos (E/O)</h3>
+        <p>Los transmisores o fuentes ópticas se requieren para convertir las señales eléctricas en ópticas y actúan como transductores ópticos; las fuentes ópticas adecuadas deben ser pequeñas y de bajo consumo, pero capaces de ser moduladas a altas velocidades, con buena estabilidad con la temperatura y factibles de generar la mayor potencia posible. Las fuentes más usadas en comunicaciones ópticas son los diodos electroluminiscentes (LED) y los láser (LD). Los elementos emisores irradian fotones mediante emisión espontánea o estimulada, para lo cual es necesario inyectar portadores de carga en exceso electrones o huecos, en una juntura (PN) fuertemente polarizada en directo.</p>
+        <p>Diodo emisor de luz (LED). El semiconductor que emite luz por emisión espontánea se denomina diodo emisor de luz (LED). La emisión espontánea se 16 produce cuando en la banda de conducción de un semiconductor se encuentran un exceso de electrones, los que con la emisión de un fotón, ocupan espontáneamente lugares libres de la banda de valencia; la radiación resultante no es coherente. </p>
+        <p>Los conversores electroópticos se fabrican en base a combinaciones de elementos químicos de la III-IV y V familia de la tabla periódica. Se tiene dos tipos de LED: los de emisión por superficie y los de emisión por esquina. Los LED de emisión por superficie, también llamados del tipo Burrus, logran su alta radiación restringiendo la emisión a una pequeña área del empaquetado, con la ayuda de un pequeño contacto de tipo p.</p> 
+        <p>El rendimiento del acoplamiento a la fibra depende del área de radiación del LED, del diámetro y perfil del Índice de refracción del núcleo y del grado de alineamiento entre la fibra y el LED. En las fibras multimodo, la apertura numérica es mayor en el eje de la fibra, por lo tanto el rendimiento de acoplamiento es mayor mientras menor es la superficie de emisión del LED o en la superficie de la fibra.</p>
 
         <h2 id="tema3">Transmisión</h2>
         <hr>
-        <p>Contenido de la sección 3...</p>
+        <h3>Diodos láser (ld)</h3>
+        <p>Los diodos láser son los que emiten radiaciones coherentes y que utilizan la emisión estimulada, ésta se produce cuando los fotones existentes en un semiconductor excitan a los portadores de carga en exceso para efectuar una recombinación radiante, es decir emitir otros fotones. La luz emitida tiene la misma longitud de onda y fase que la luz incidente, por lo tanto, la emisión es coherente. </p>
+        <p>En el diodo láser una corriente grande provoca un exceso de portadores de carga en la banda de conducción, que posibilita una fuerte emisión estimulada. Este efecto amplificador producido por una avalancha de fotones es apoyado por un resonador óptico, que en general, está formado por dos espejos planos paralelos semitransparentes. </p>
+        <p>En el diodo láser, las dos superficies son naturales de cristal que se forman al dividirse el cristal semiconductor y son 18 recubiertas con una capa protectora adicional. La estructura del láser es similar a la de un LED y bajo ciertas condiciones actúa como un LED. La curva característica de potencia luminosa vs corriente eléctrica.</p>
+
+        <div class="imagen">
+          <img src="cap1/imagen4.png" alt="Curva característica potencia luminosa vs potencia de un diodo">
+          <p>Curva característica potencia luminosa vs potencia de un diodo</p>  
+        </div>
+
+        <h3>Fotodiodos de avalancha (apd)</h3>
+        <p>Cuando la tensión de polarización inversa está próxima a la ruptura, los portadores mayoritarios pueden obtener 22 suficiente energía en presencia de un campo eléctrico, para crear nuevos pares de portadores por impactos de ionización a este mecanismo se le denomina multiplicación por avalancha. La fotocorriente multiplicada (Im) puede expresarse como.</p>
+        <p>Im=M*Ip</p>
+        <p>Siendo M la ganancia media del fotomultiplicador. </p>
+        <p>Estos fotodiodos que aprovechan el efecto de avalancha se les conocen como (APD), o fotodiodos de avalancha y existen APD de silicio, germanio y de compuestos de la III y V familia de los elementos de la tabla periódica.</p>
+
+        <h3>Fotodiodo PIN </h3>
+        <p>La estructura de un fotodiodo PIN es simple, consiste en una unión PN, formada en un semiconductor y con una banda energética más estrecha que la correspondiente a la energía 23 de un fotón de la señal que se desea detectar. Los fotones absorbidos crean pares electrón-hueco que se desplazan en sentido contrario dentro del campo del semiconductor y originan una corriente Ip en un circuito exterior.</p>
+
+        <h3>TRANSMISIÓN</h3>
+        <h4>a) Decodificador </h4>
+        <p>Su función específica es la de convertir el código de la señal procedente del multiplex HDB3, o CMI en sistemas a 34 o 140 Mbit/s respectivamente, en una señal binaria. El decodificador está diseñado para admitir la señal digital de acuerdo con las especificaciones del interfaz G.703 del CITT. </p>
+
+        <h4>b) Codificador </h4>
+        <p>Convierte la señal binaria al código de línea por fibra óptica, un código muy usado es el 5B 6B. También es frecuente que antes del codificador se intercale un aleatorizador, a fin de asegurar la transparencia del sistema al código binario y facilitar la extracción de la temporización en los regeneradores, y la sincronización de bloques para la decodificación del código de linea. 26 La señal binaria convertida al código 5B 6B sufre una conversión serie - paralelo, formándose bloques da 5 bits que son luego codificados en bloques de 6 bits, el sincronismo de ésta operación se obtiene dividiendo por 5 la frecuencia de la señal entrante. Los bloques de 6 bits en paralelo se convierten en un tren de impulsos en serie, leyéndolos a una frecuencia de 6/5 de la señal entrante, la señal así codificada se entrega al transmisor electroóptico (conversor eléctrico-óptico). </p>
+
+        <h4>c) Transmisor óptico.</h4>
+        <p>Al modular la señal codificada la corriente de polarización de un diodo láser o led se convierte en impulsos ópticos. </p>
+        <p>Los diodos láser presentan una mayor potencia óptica de salida y baja atenuación de acoplamiento a la fibra óptica respecto de los Led. Los láser se utilizan con fibras ópticas monomodo por el reducido ancho espectral, lo cual tiene relación con la dispersión cromática y por ello con el ancho de banda del sistema. Si modulamos el láser con una señal digital cuya corriente de excitación, tiene la máxima variación (desde cero al máximo en la zona de linealidad) se tiene que el emisor pasa de la emisión espontánea a la emisión estimulada. Para evitar este periodo transitorio debe usarse el láser con corrientes superiores al umbral Im.</p>
 
         <h2 id="tema4">Ventanas de operacón</h2>
         <hr>
-        <p>Contenido de la sección 3...</p>
+        <p>Hay gamas de longitudes de onda en las que la fibra funciona mejor. Cada rango se conoce como ventana de operación. Cada ventana se centra en la longitud de onda operativa tipica, como se muestra en la tabla.</p>
+
+        <div class="imagen">
+          <img src="cap1/imagen5.png" alt="">
+        </div>
+
+        <p>Datos técnicos para considerar:</p>
+
+        <div class="imagen">
+          <img src="cap1/imagen6.png" alt="">
+        </div>
+
+        <p>En recomendación UIT-T</p>
+        <div class="imagen">
+          <img src="cap1/imagen7.png" alt="">
+        </div>
 
         <h2 id="tema5">Aplicaciones para la fibra óptica</h2>
         <hr>
-        <p>Contenido de la sección 3...</p>
+
+        
 
         <h2 id="tema6">Refracción</h2>
         <hr>
-        <p>Contenido de la sección 3...</p>
+
+        <p>Si el rayo luminoso incide con un ángulo α de modo oblicuo desde una sustancia ópticamente menos densa a otra más densa, su dirección de propagación se quiebra y su trayectoria continúa en la segunda sustancia con un ángulo de refracción β. Para una sustancia isotrópica, o sea un medio o material que presenta idénticas propiedades en todas sus direcciones.</p>
+
+        <h3>Ley de Refracción de Snell</h3>
+        <p>El cociente entre el seno del ángulo de incidencia α y el seno del ángulo de refracción β es constante e igual a la relación de las velocidades de la luz c1/c2 en ambas sustancias.</p>
+        
+        <div class="imagengrande">
+          <img src="cap1/imagen8.png" alt="Refracción de la luz">
+          <p>Refracción de la luz</p>
+          <p></p>
+        </div>
+
+        <div class="formula">
+          <img src="cap1/imagen9.png" alt="">
+          <p>α: Ángulo de incidencia </p>
+          <p>β: Ángulo de refracción </p>
+          <p>C_1: Velocidad de la luz en la sustancia 1 </p>
+          <p>C_2: Velocidad de la luz en la sustancia 2</p>
+        </div>
+
+        <p>De donde se obtiene otra expresión de la ley de Refracción de Snell:</p>
+
+        <div class="formula">
+          <img src="cap1/imagen10.png" alt="">
+        </div>
+
+        <div class="imagengrande">
+          <img src="cap1/imagen11.png" alt="Refracción de luz total">
+          <p>Refracción de luz total</p>
+        </div>
 
         <h2 id="tema7">Apertura numérica</h2>
         <hr>
-        <p>Contenido de la sección 3...</p>
+
+        <p>En los conductores de fibra óptica se utiliza el efecto de la reflexión total para conducir el rayo luminoso debido a que estos conductores poseen en su centro un “núcleo” formado por un vidrio con un índice de refracción n1 y, envolviéndolo, un “recubrimiento” formado por un vidrio con un índice de refracción n2 . El valor de n1 es algo mayor que el de n2.</p>
+
+        <div class="imagen">
+          <img src="cap1/imagen12.png" alt="Conducción de la luz en un conductor de fibra óptica">
+          <p>Conducción de la luz en un conductor de fibra óptica</p>
+        </div>
+
+        <p>Analizando la expresión </p>
+        <div class="formula">
+          <img src="cap1/imagen13.png" alt="">
+        </div>
+
+        <p>se concluye que todos los rayos luminosos que incidan con un ángulo menor que (90º - α_0) con respecto al eje de fibra óptica son conducidos en el núcleo.</p>
+        <p>Considerando la condición:</p>
+        <div class="formula">
+          <img src="cap1/imagen14.png" alt="">
+        </div>
+
+        <p>Se tiene la expresión:</p>
+        <div class="formula">
+          <img src="cap1/imagen15.png" alt="">
+        </div>
 
         <h2 id="tema8">Ángulo de aceptación</h2>
         <hr>
-        <p>Contenido de la sección 3...</p>
+        <p>El máximo ángulo de acoplamiento θ_max se denomina ángulo de aceptación del conductor de fibra óptica y es únicamente función de los índices de refracción n1y n2. Al seno del ángulo de aceptación se lo denomina apertura numérica (AN) del conductor de fibra óptica:</p>
+        <div class="formula">
+          <img src="cap1/imagen16.png" alt="">
+        </div>
+        <p>Este valor es de gran importancia para el acoplamiento de la luz a los conductores de fibra óptica.</p>
 
         <h2 id="tema9">Atenuación</h2>
         <hr>
-        <p>Contenido de la sección 3...</p>
+        <p>La luz que se propaga en un conductor de fibra óptica experimenta una atenuación: produce una pérdida de energía. Para cubrir grandes distancias sin emplear regeneradores intermedios es necesario mantener estas pérdidas en el mínimo posible. La atenuación de un conductor de fibra óptica es un parámetro importante para la planificación de redes de cables para telecomunicaciones ópticas y la producen principalmente los fenómenos físicos como son absorción y dispersión.</p>
+        <p>La magnitud de estas pérdidas luminosas depende entre otros factores de la longitud de onda de la luz acoplada. Por eso, para determinar las gamas de longitudes de onda adecuadas para la transmisión óptica con baja atenuación, resulta, en general, útil medir la atenuación de un conductor de fibra óptica en función de la longitud de onda (espectral).</p>
+
+        <div class="imagen">
+          <img src="cap1/imagen17.png" alt="Curva de atenuación de Rayleigh">
+          <p>Curva de atenuación de Rayleigh</p>
+        </div>
+
+        <div class="formula">
+          <img src="cap1/imagen18.png" alt="">
+          <p>A(dB) = Reducción total de potencia (atenuación)  </p>
+          <p>P Tx = Potencia de salida del cable (vatios)  </p>
+          <p>P RX = Potencia de entrada al cable (vatios) </p>
+        </div>
+
+        <h3>Factores de atenuación </h3>
+
 
         <h2 id="tema10">Pérdidas de acoplamiento en juntas de fibra óptica</h2>
         <hr>
-          <p>Contenido de la sección 3...</p>
+        <h3>Perdidas de acoplamiento en juntas de fibras opticas</h3>
+        <p>La tecnolog1a de fabricaci6n de fibras 6pticas y componentes optoelectrónicos ha avanzado grandemente en los últimos anos produciendo un espectacular desarrollo de las comunicaciones opticas. Los primeros anal1sis detallados de los modos de fibras de uso en telecomunicaciones datan del inicio de los años 70, centrándose inicialmente en los problemas de excitaci6n de fibras monomodo, el desarrollo y uso inicial de fibras multimodo produjo estudios electromagnéticos y una caracterizaci6n modal muy completa. Recientemente debido al gran avance tecnol6gico y a la superaci6n de problemas mecánicos de fabricacion y conexi6n que parecían insuperables, existe un renovado interés en las fibras monomodo y en particular de los análisis de acoplamiento y conexi6n. Estudios de la eficiencia de excitaci6n fueron realizados usando la aproximaci6n de Born mediante desarrollos modales. Se analiza a continuación las pérdidas de conexión de fibras monomodo 6 de bajo número de modos, para desplazamientos laterales, angulares o diferencia de radios de las fibras.</p>
+
+        <h4>a)	Junta con desplazamiento lateral de ejes</h4>
+        <p>La figura muestra una junta de dos fibras iguales cuyos ejes están separados lateralmente una distancia d, la gráfica b) que la acompaña representa el coeficiente de transmisi6n de potencia del modo HE1, para una fibra con tres valore£. de V, en función de la separación lateral normalizada respecto al radio del núcleo d/a</p>
+
+        <div class="imagen">
+          <img src="cap1/imagen19.png" alt="">
+        </div>
+        
+        <h4>b)	Junta con desplazamiento angular de ejes</h4>
+        <p>La figura muestra curvas similares para un desplazamiento angular entre ejes de valor con indicación de las correspondientes eficiencias de excitación </p>
+
+        <div class="imagen">
+          <img src="cap1/imagen20.png" alt="">
+        </div>
+
+        <h4>c)	Junta de fibras de distinto radio</h4>
+        <p>La figura muestra la unión de dos fibras de distinto radio del núcleo y la Tabla indica las eficiencias de excitación de los distintos modos para A= 0.9 ~m, nl=1.50 y n2=1.49. Se observa de nuevo una gran dependencia con las dimensiones, que se ve acentuada par la aparici6n de modos de orden superior.</p>
+
+        <div class="imagen">
+          <img src="cap1/imagen21.png" alt="">
+        </div>
 
         <h2 id="tema11">Dispersión</h2>
         <hr>
-        <p>Contenido de la sección 3...</p>
+        
+        <h3>Dispersión Modal </h3>
+        <p>La dispersión modal se origina debido a que cada uno de los modos que se propagan por el guía ondas puede seguir una trayectoria distinta en el interior del núcleo. Como la velocidad de propagación en cada punto depende del Índice de refracción, los modos de propagación sufren retardos relativos que dan lugar a un ensanchamiento de los impulsos de luz. Si inyectamos a un mismo tiempo un número determinado de fotones (partícula asociada a la energía electromagnética) en la salida se identificarán en el tiempo debido a los diferentes recorridos.</p>
+        <p>En la práctica la identificación de cada fotón requiere de un instrumento de detección de muy alta velocidad de respuesta (gran ancho de banda), como el contador de fotones. Con instrumentos de detección más simples se obtiene una medida que es la integración de la energía recibida y se asocia generalmente a un pulso de forma gaussiana. A ésta apertura del impulso de ingreso se le denomina dispersión modal. La definición de la dispersión modal se realiza en base a pulsos gaussianos de entrada y salida, así:</p>
+
+        <div class="formula">
+          <img src="cap1/imagen22.png" alt="">
+          <p>W_m Dispersión modal </p>
+          <p>W_e Apertura de impulso de entrada </p>
+          <p>W_s Apertura de impulso de entrada </p>
+        </div>
+        <p></p>
+        <div class="imagen">
+          <img src="cap1/imagen23.png" alt="Dispersión modal en base al ensanchamiento de un impulso gaussiano">
+          <p>Dispersión modal en base al ensanchamiento de un impulso gaussiano</p>
+        </div>
+
+        <p>De esta forma se obtiene que el ancho de banda definido a 3 dB de atenuación de potencia óptica respecto de la frecuencia de 0 Hz será:</p>
+        <div class="formula">
+          <img src="cap1/imagen24.png" alt="">
+        </div>
+
+        <h3>Dispersión cromática </h3>
+        <p>Si la dispersión modal es nula el ancho de banda será infinito, pero esto no ocurre debido a que existe la dispersión cromática o intermodal que es de magnitud inferior. que la dispersión modal y por ello permanece enmascarada en las fibras ópticas multimodo, la dispersión modal es despreciable para las fibras monomodo ya que presentan un sólo modo de propagación mejorando de esta forma el ancho de banda en estas fibras. </p>
+        <p>La dispersión cromática es la suma de la dispersión del material y la dispersión de guía onda, producida por el ensanchamiento temporal de los impulsos en la fibra, la dispersión cromática tiene su raíz en la dependencia del índice de refracción del núcleo con la longitud de onda, y la anchura espectral de las fuentes ópticas. Para nuestro análisis se define el índice de grupo.n_g:</p>
+
+        <div class="formula">
+          <img src="cap1/imagen25.png" alt="">
+          <p>c: Velocidad de la luz en el vacío </p>
+          <p>V_g: Velocidad de propagación de grupo </p>
+        </div>
+
+        <p>El ancho de banda resultante será función inversa de la dispersión cromática y la anchura espectral de la fuente emisora (láser) se expresa como:</p>
+        <div class="formula">
+          <img src="cap1/imagen26.png" alt="">
+        </div>
+        <p>λ [nm] Ancho espectral de la fuente en el punto de media potencia.  </p>
 
         <h2 id="tema12">Descargas</h2>
         <hr>
@@ -157,7 +344,7 @@
             </div>
           </div>
         </div>
-
+        <button id="back-to-top">Ir arriba</button>
         <script src="cap1.js"></script>
 
       </div>

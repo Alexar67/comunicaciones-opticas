@@ -20,6 +20,24 @@ h2 {
   font-size: 40px;
 }
 
+h3 {
+  width: 100%;
+  text-align:left;
+  font-size: 22px;
+  padding-left: 20px;
+}
+
+h4 {
+  width: 100%;
+  text-align:left;
+  padding-left: 20px;
+}
+
+p {
+  text-align: justify;
+  font-size: 18px;
+}
+
 .container {
   width: 90%;
   margin: auto;
@@ -229,4 +247,95 @@ button {
 .pregunta {
   margin-bottom: 15px;
 }
+
+/*Imagenes con descripción*/
+
+.imagen {
+  text-align: center; 
+  font-style: italic;
+  line-height: 0.4;
+}
+
+.imagen p {
+  text-align: center;
+}
+
+.imagen img {
+  width: 50%; 
+  display: block; 
+  margin: 0 auto; 
+}
+
+/*Imagenes grandes*/
+
+.imagengrande {
+  text-align: center; 
+  font-style: italic;
+  line-height: 0.4;
+}
+
+.imagengrande p {
+  text-align: center;
+}
+
+.imagengrande img {
+  width: 30%; 
+  display: block; 
+  margin: 0 auto; 
+}
+
+/*Imagenes pequñas*/
+
+.imagenpequeña {
+  text-align: center; 
+  font-style: italic;
+  line-height: 0.4;
+}
+
+.imagenpequeña p {
+  text-align: center;
+}
+
+.imagenpequeña img {
+  width: 70%; 
+  display: block; 
+  margin: 0 auto; 
+}
+
+/*Formulas*/
+
+.formula {
+  text-align: center; 
+  font-style: italic;
+  line-height: 0.4;
+}
+
+.formula p {
+  text-align: center;
+}
+
+.formula img {
+  width: 15%; 
+  display: block; 
+  margin: 0 auto; 
+}
+
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#back-to-top:hover {
+  background-color: #555;
+}
+
+
 
