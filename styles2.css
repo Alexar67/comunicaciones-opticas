@@ -46,7 +46,7 @@ p {
 
 .content-container {
   background-color: #fff; /* Área blanca */
-  padding-top: 100px;
+  padding-top: 5px;
   padding-bottom: 100px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); /* Sombra suave */
   width: 100%; /* Ancho del contenido */
@@ -59,6 +59,27 @@ p {
   padding-bottom: 0px;
   margin: 0;
   width: 100%;
+}
+
+/*IMAGENES DE LA UNIVERSIDAD*/
+.contenedor-imagenes {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+}
+
+.imagen-izquierda,
+.imagen-derecha {
+  width: 25%; /* Cada imagen ocupa el 50% del contenedor */
+  height: auto;
+}
+
+.imagen-izquierda {
+  margin-right: 580px; /* Espaciado entre las imágenes (ajusta según sea necesario) */
+}
+
+.imagen-derecha {
+  margin-left: 10px; /* Espaciado entre las imágenes (ajusta según sea necesario) */
 }
 
 /* Navegación */
