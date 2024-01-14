@@ -320,6 +320,12 @@ button {
   margin: 0 auto; 
 }
 
+.imagennormal img {
+  width: 40%; 
+  display: block; 
+  margin: 0 auto; 
+}
+
 /*Formulas*/
 
 .formula {
@@ -358,3 +364,62 @@ button {
 .lista {
   padding-right: 50px;
 }
+
+/* CUADRO DE TEXTO CON IMAGEN EN EL INTRO*/
+.texto p {
+  text-align: justify;
+  font-size: 20px;
+}
+
+.textovideo {
+  padding: 0;
+  margin: 0 0 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.imagentexto img {
+  width: 80%; 
+  padding-right: 100px;
+  margin-right: 100px;
+  display: block; 
+}
+
+.textoi p {
+  text-align: justify;
+  font-size: 20px;
+  padding-left: 130px;
+}
+
+.textoi ol {
+  text-align: justify;
+  padding-left: 160px;
+}
+
+.imagensuperpequeña img {
+  width: 120%; 
+  padding-left: 20px;
+  margin-left: 20px;
+  padding-right: 20px;
+  margin-right: 20px;
+  display: block; 
+}
+
+.imagenes {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.imagenes .imagen1 {
+  width: 40%; /* Ambas imágenes ocupan la mitad del contenedor */
+}
+
+.imagenes img {
+  width: 60%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+

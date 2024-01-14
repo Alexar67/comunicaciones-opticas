@@ -257,3 +257,47 @@ h2 {
 hr {
   margin: 0 40px 0 40px;
 }
+
+/*INTEGRANTES*/
+.contenedor-equipo {
+  display: flex;
+  justify-content: center;
+}
+
+.miembro {
+  text-align: center;
+  margin: 30px;
+}
+
+.imagen {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.nombre {
+  font-weight: bold;
+}
+
+.linea {
+  border-top: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+.profesion {
+  margin-bottom: 10px;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+}
+
+.red {
+  margin: 0 5px;
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
