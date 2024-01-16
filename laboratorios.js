@@ -23,6 +23,11 @@ document.getElementById('sim1pdf').addEventListener('click', function() {
   window.open(url, '_blank');
 });
 
+document.getElementById('guia1pdf').addEventListener('click', function() {
+  var url = 'guias/guia_practica_1.pdf';
+  window.open(url, '_blank');
+});
+
 document.getElementById('sim2').addEventListener('click', function() {
   var url = 'simulaciones/Practica N2 - Amplificacion óptica.osd';
   window.open(url, '_blank');
@@ -63,6 +68,11 @@ document.getElementById('sim5pdf').addEventListener('click', function() {
   window.open(url, '_blank');
 });
 
+document.getElementById('guia5pdf').addEventListener('click', function() {
+  var url = 'guias/guia_practica_5.pdf';
+  window.open(url, '_blank');
+});
+
 document.getElementById('sim6').addEventListener('click', function() {
   var url = 'simulaciones/Practica N6 - FTTH.osd';
   window.open(url, '_blank');
@@ -73,6 +83,11 @@ document.getElementById('sim6pdf').addEventListener('click', function() {
   window.open(url, '_blank');
 });
 
+document.getElementById('guia6pdf').addEventListener('click', function() {
+  var url = 'guias/guia_practica_6.pdf';
+  window.open(url, '_blank');
+});
+
 document.getElementById('sim7').addEventListener('click', function() {
   var url = 'simulaciones/Practica N7 - Diodo emisor de luz.osd';
   window.open(url, '_blank');
@@ -80,6 +95,11 @@ document.getElementById('sim7').addEventListener('click', function() {
 
 document.getElementById('sim7pdf').addEventListener('click', function() {
   var url = 'informes/Informe practica 7 8.pdf';
+  window.open(url, '_blank');
+});
+
+document.getElementById('guia7pdf').addEventListener('click', function() {
+  var url = 'guias/guia_practica_7.pdf';
   window.open(url, '_blank');
 });
 
