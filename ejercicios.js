@@ -46,6 +46,32 @@ document.getElementById('libro8').addEventListener('click', function() {
   window.open(url, '_blank');
 });
 
+/*LIBROS*/
+
+document.getElementById('libroa').addEventListener('click', function() {
+  var url = 'ejercicios/Ejercicios 2.pdf'; // Reemplaza con la URL de tu archivo PDF o Word
+  // Abrir el enlace en una nueva pestaña
+  window.open(url, '_blank');
+});
+
+document.getElementById('librob').addEventListener('click', function() {
+  var url = 'ejercicios/Ejercicios 2.docx'; // Reemplaza con la URL de tu archivo PDF o Word
+  // Abrir el enlace en una nueva pestaña
+  window.open(url, '_blank');
+});
+
+document.getElementById('libroc').addEventListener('click', function() {
+  var url = 'ejercicios/Ejercicios.pdf'; // Reemplaza con la URL de tu archivo PDF o Word
+  // Abrir el enlace en una nueva pestaña
+  window.open(url, '_blank');
+});
+
+document.getElementById('librod').addEventListener('click', function() {
+  var url = 'ejercicios/Ejercicios.docx'; // Reemplaza con la URL de tu archivo PDF o Word
+  // Abrir el enlace en una nueva pestaña
+  window.open(url, '_blank');
+});
+
 
 /*REGRESAR ARRIBA*/
 window.addEventListener('scroll', function() {
