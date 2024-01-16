@@ -1,12 +1,12 @@
 document.getElementById('descargarpdf').addEventListener('click', function() {
-  var url = 'docs/cap1.pdf'; // Reemplaza con la URL de tu archivo PDF o Word
+  var url = 'docs/cap2.pdf'; // Reemplaza con la URL de tu archivo PDF o Word
   
   // Abrir el enlace en una nueva pestaña
   window.open(url, '_blank');
 });
 
 document.getElementById('descargarword').addEventListener('click', function() {
-  var url = 'docs/cap1.docx'; // Reemplaza con la URL de tu archivo PDF o Word
+  var url = 'docs/cap2.docx'; // Reemplaza con la URL de tu archivo PDF o Word
   
   // Abrir el enlace en una nueva pestaña
   window.open(url, '_blank');
@@ -31,7 +31,7 @@ document.getElementById('calcularResultado').addEventListener('click', function(
   // Lógica de cálculo de puntuación - Ejemplo para la primera pregunta
   const respuestaPregunta1 = document.querySelector('input[name="pregunta1"]:checked');
   if (respuestaPregunta1) {
-    if (respuestaPregunta1.value === '1939') {
+    if (respuestaPregunta1.value === 'b') {
       puntuacion++;
       respuestasCorrectas.push('Pregunta 1');
     } else {
@@ -41,7 +41,7 @@ document.getElementById('calcularResultado').addEventListener('click', function(
 
   const respuestaPregunta2 = document.querySelector('input[name="pregunta2"]:checked');
   if (respuestaPregunta2) {
-    if (respuestaPregunta1.value === '1939') {
+    if (respuestaPregunta2.value === 'a') {
       puntuacion++;
       respuestasCorrectas.push('Pregunta 2');
     } else {
@@ -51,7 +51,7 @@ document.getElementById('calcularResultado').addEventListener('click', function(
 
   const respuestaPregunta3 = document.querySelector('input[name="pregunta3"]:checked');
   if (respuestaPregunta3) {
-    if (respuestaPregunta3.value === '1939') {
+    if (respuestaPregunta3.value === 'a') {
       puntuacion++;
       respuestasCorrectas.push('Pregunta 3');
     } else {
@@ -61,7 +61,7 @@ document.getElementById('calcularResultado').addEventListener('click', function(
 
   const respuestaPregunta4 = document.querySelector('input[name="pregunta4"]:checked');
   if (respuestaPregunta4) {
-    if (respuestaPregunta4.value === '1939') {
+    if (respuestaPregunta4.value === 'c') {
       puntuacion++;
       respuestasCorrectas.push('Pregunta 4');
     } else {
@@ -71,7 +71,7 @@ document.getElementById('calcularResultado').addEventListener('click', function(
 
   const respuestaPregunta5 = document.querySelector('input[name="pregunta5"]:checked');
   if (respuestaPregunta5) {
-    if (respuestaPregunta5.value === '1939') {
+    if (respuestaPregunta5.value === 'b') {
       puntuacion++;
       respuestasCorrectas.push('Pregunta 5');
     } else {
