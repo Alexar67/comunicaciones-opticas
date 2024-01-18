@@ -1,12 +1,40 @@
-document.getElementById('descargarpdf').addEventListener('click', function() {
-  var url = 'docs/cap1.pdf'; // Reemplaza con la URL de tu archivo PDF o Word
+document.getElementById('python').addEventListener('click', function() {
+  var url = 'docs/informe python opticas.pdf'; // Reemplaza con la URL de tu archivo PDF o Word
   
   // Abrir el enlace en una nueva pestaña
   window.open(url, '_blank');
 });
 
-document.getElementById('descargarword').addEventListener('click', function() {
-  var url = 'docs/cap1.docx'; // Reemplaza con la URL de tu archivo PDF o Word
+document.getElementById('gpon').addEventListener('click', function() {
+  var url = 'docs/Informe Proyecto Final GPON Cotopaxi.pdf'; // Reemplaza con la URL de tu archivo PDF o Word
+  
+  // Abrir el enlace en una nueva pestaña
+  window.open(url, '_blank');
+});
+
+document.getElementById('optico').addEventListener('click', function() {
+  var url = 'docs/Formatoinforme Sistema Optico.pdf'; // Reemplaza con la URL de tu archivo PDF o Word
+  
+  // Abrir el enlace en una nueva pestaña
+  window.open(url, '_blank');
+});
+
+document.getElementById('pythonrar').addEventListener('click', function() {
+  var url = 'docs/Final.rar'; // Reemplaza con la URL de tu archivo PDF o Word
+  
+  // Abrir el enlace en una nueva pestaña
+  window.open(url, '_blank');
+});
+
+document.getElementById('gponrar').addEventListener('click', function() {
+  var url = 'docs/Final.rar'; // Reemplaza con la URL de tu archivo PDF o Word
+  
+  // Abrir el enlace en una nueva pestaña
+  window.open(url, '_blank');
+});
+
+document.getElementById('opticorar').addEventListener('click', function() {
+  var url = 'docs/Final.rar'; // Reemplaza con la URL de tu archivo PDF o Word
   
   // Abrir el enlace en una nueva pestaña
   window.open(url, '_blank');
